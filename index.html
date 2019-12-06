@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <!-- jQuery -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+        <script src="assets/js/nav.js"></script>
+
+        <!-- Icon Library -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        
+
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <div w3-include-html="assets/components/nav.html"></div> 
+        <!-- end navigation -->
+
+        <div class="main">
+
+            <div class="main-header"><h1>Header</h1></div>
+               
+            <div class="main-top">top</div>
+
+            <div class="main-bottom-left">left</div>
+
+            <div class="main-bottom-right">right</div>
+
+            <div class="main-footer">footer</div>
+
+        </div>
+
+
+        <script>
+            includeHTML();
+
+            $("#cssmenu").menumaker({
+                title: "Menu",
+                breakpoint: 768,
+                format: "multitoggle"
+            });
+        </script>
+    </body>
+</html>
