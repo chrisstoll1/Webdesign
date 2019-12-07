@@ -58,7 +58,7 @@
   text-transform: uppercase;
 }
 #cssmenu > ul > li:hover > a {
-  color: #2994ff;
+  color: #3d95ec;
 }
 #cssmenu > ul > li.has-sub > a {
   padding-right: 30px;
@@ -141,7 +141,7 @@
 }
 #cssmenu ul ul li:hover > a,
 #cssmenu ul ul li a:hover {
-  color: #2994ff;
+  color: #3d95ec;
 }
 #cssmenu ul ul li.has-sub > a:after {
   position: absolute;
@@ -218,7 +218,7 @@
 }
 #cssmenu.small-screen ul ul li:hover > a,
 #cssmenu.small-screen ul ul li.active > a {
-  color: #2994ff;
+  color: #3d95ec;
 }
 #cssmenu.small-screen ul ul,
 #cssmenu.small-screen ul ul ul,
@@ -272,7 +272,7 @@
   border: 0;
   height: 2px;
   width: 15px;
-  background: #2994ff;
+  background: #3d95ec;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -281,7 +281,7 @@
 }
 #cssmenu.small-screen #menu-button.menu-opened:before {
   top: 24px;
-  background: #2994ff;
+  background: #3d95ec;
   width: 15px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -322,7 +322,7 @@
   right: 13px;
 }
 #cssmenu.small-screen .submenu-button.submenu-opened:after {
-  background: #2994ff;
+  background: #3d95ec;
 }
 #cssmenu.small-screen .submenu-button:before {
   position: absolute;
@@ -349,8 +349,11 @@ body {
     margin: 0;
     font-family: Montserrat, sans-serif;
     background: #3d95ec;
-  }
-  
+}
+
+.content {
+  padding: 10px;
+}
 
 div.main {
   margin: auto;
@@ -369,39 +372,33 @@ div.main {
   grid-area: 1 / 2 / 2 / 5;
   height: 100%;
   width: 100%;
-  border-style: solid;
-  border-width: 5px;
 }
 
 .main-top {
   grid-area: 2 / 1 / 4 / 6;
   height: 100%;
   width: 100%;
-  border-style: solid;
-  border-width: 5px;
+
 }
 
 .main-bottom-left {
   grid-area: 4 / 1 / 7 / 3;
   height: 100%;
   width: 100%;
-  border-style: solid;
-  border-width: 5px;
+
 }
 
 .main-bottom-right {
   grid-area: 4 / 3 / 7 / 6;
   height: 100%;
   width: 100%;
-  border-style: solid;
-  border-width: 5px;
+
 }
 
 .main-footer {
   grid-area: 7 / 1 / 8 / 6;
   height: 100%;
   width: 100%;
-  border-style: solid;
-  border-width: 5px;
+  background-color: #dddddd;
 }
 

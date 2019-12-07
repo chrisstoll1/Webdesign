@@ -5,28 +5,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="assets/css/main.css">
         <!-- jQuery -->
-        <script
-			  src="https://code.jquery.com/jquery-3.4.1.min.js"
-			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-			  crossorigin="anonymous"></script>
-        <!-- Icon Library -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
-        <script src="assets/js/includeHTML.js"></script>
         <script src="assets/js/nav.js"></script>
-       
+
+        <!-- Icon Library -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">     
 
     </head>
     <body>
         <!-- Navigation Bar -->
-        <div w3-include-html="assets/components/nav.html"></div>
+        <div id="cssmenu" class="align-center">
+            <ul>
+               <li><a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
+               <li><a href="#">Assignments</a>
+                  <ul>
+                     <li><a href="assignments/1.0.html" target="_blank">1.0</a></li>
+                     <li><a href="assignments/2.0.html" target="_blank">2.0</a></li>
+                     <li><a href="assignments/3.0.html" target="_blank">3.0</a></li>
+                     <li><a href="assignments/4.0.html" target="_blank">4.0</a></li>
+                     <li><a href="assignments/5.0.html" target="_blank">5.0</a></li>
+                     <li><a href="assignments/6.0.html" target="_blank">6.0</a></li>
+                     <li><a href="assignments/7.0.html" target="_blank">7.0</a></li>
+                     <li><a href="assignments/8.0.html" target="_blank">8.0</a></li>
+                     <li><a href="assignments/8.5.html" target="_blank">8.5</a></li>
+                     <li><a href="assignments/9.0.html" target="_blank">9.0</a></li>
+                     <li><a href="assignments/10.0.html" target="_blank">10.0</a></li>
+                     <li><a href="assignments/11.0.html" target="_blank">11.0</a></li>
+                     <li><a href="assignments/12.0.html" target="_blank">12.0</a></li>
+                  </ul>
+               </li>
+               <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+          </div>
         <!-- end navigation -->
 
         <div class="main">
 
-            <div class="main-header"><h1>Header</h1></div>
+            <div class="main-header">
+                <h1>Home</h1>
+                <div class="content">
+                        <h3>Welcome to my Website</h3>
+                        <p>This sites purpose is to show off all of my assignments over the course of the semseter and some of my other web design related projects I have been working on. </p>
+                    </div>
+            </div>
                
-            <div class="main-top">top</div>
+            <div class="main-top">
+
+                
+            
+            </div>
 
             <div class="main-bottom-left">left</div>
 
@@ -38,8 +66,6 @@
 
 
         <script>
-            includeHTML();
-
             $("#cssmenu").menumaker({
                 title: "Menu",
                 breakpoint: 768,
