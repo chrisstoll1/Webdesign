@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+.main {
+    max-width: 850px;
+    margin: auto;
+}
+
+code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    height: 100px;
+}
+
+.cgparent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr; 
+    grid-column-gap: 25px;
+}
+.dgparent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr; 
+    grid-column-gap: 25px;
+}
+
+.cgparent .example {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.cgparent .result {
+    grid-area: 1 / 2 / 2 / 3;
+}
+.dgparent .example {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.dgparent .result {
+    grid-area: 1 / 2 / 2 / 3;
+}
+.result > div {
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    height: 100px;
+}
+
+span {
+    background-color: white;
+}
+.cresult div > span {
+    background-color: dodgerblue;
+}
+
+li {
+    list-style-type: disc;
+}
+  
+li li {
+    list-style-type: circle;
+}
+ul {
+    padding-top: 0px;
+}

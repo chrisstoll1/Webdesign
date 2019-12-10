@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="../../assets/css/home_btn.css">
+
+    </head>
+    <body>
+            <a href="../../"><div class="home_btn"></div></a>
+
+
+            <div class="main">
+                <h1 style="text-align: center;">CSS Selectors</h1>
+
+                <div class="child">
+                        <h3 style="text-align: center; padding-top: 50px;">Child</h3>
+
+                    <div class="cgparent">
+                        <div class="example">
+                            <p>An example of a CSS Child selector would be this...</p>
+                            <code>span {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;background-color: white;<br>
+                            }<br>
+                            
+                            div > span {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;background-color: DodgerBlue;<br>
+                            }</code>
+                        </div>
+                        <div class="result">
+                            <p>The results:</p>
+                            <div class="cresult">
+                                    <div>
+                                        <span>Span #1, in the div.
+                                            <span>Span #2, in the span that's in the div.</span>
+                                        </span>
+                                    </div>
+                                        <span>Span #3, not in the div at all.</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="descendant">
+                    <h3 style="text-align: center; padding-top: 50px;">Descendant</h3>
+
+                    <div class="dgparent">
+                        <div class="example">
+                            <p>An example of a CSS Descendant would be this...</p>
+                            <code>
+                                    li {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;     list-style-type: disc;<br>
+                                      }<br>
+                                      
+                                      li li {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;    list-style-type: circle;<br>
+                                      }<br>
+                            </code>
+                        </div>
+                        <div class="result">
+                            <p>The results:</p>
+                            <div class="result">
+                                    <ul>
+                                            <li>
+                                                Item 1
+                                                <ul>
+                                                <li>Subitem A</li>
+                                                <li>Subitem B</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Item 2
+                                                <ul>
+                                                <li>Subitem A</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            
+        </div>
+
+    </body>
+</html>
