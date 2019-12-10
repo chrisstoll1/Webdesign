@@ -1,4 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -360,9 +367,6 @@ div.main {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(7, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 15px; 
-  min-height: 1500px;
   max-width: 850px;
   text-align: center;
   background: white;
@@ -370,35 +374,80 @@ div.main {
 
 .main-header {
   grid-area: 1 / 2 / 2 / 5;
-  height: 100%;
-  width: 100%;
 }
 
 .main-top {
   grid-area: 2 / 1 / 4 / 6;
-  height: 100%;
-  width: 100%;
-
 }
 
 .main-bottom-left {
   grid-area: 4 / 1 / 7 / 3;
-  height: 100%;
-  width: 100%;
+  text-align: left;
+  padding: 50px;
+  padding-left: 150px;
+  max-width: 425px;
 
 }
 
 .main-bottom-right {
   grid-area: 4 / 3 / 7 / 6;
-  height: 100%;
-  width: 100%;
-
+  text-align: left;
+  padding: 50px;
+  padding-left: 150px;
+  max-width: 425px;
+  margin: 0px;
 }
 
 .main-footer {
   grid-area: 7 / 1 / 8 / 6;
-  height: 100%;
-  width: 100%;
   background-color: #dddddd;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 850px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #262626;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
 }
 
