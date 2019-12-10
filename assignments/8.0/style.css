@@ -29,18 +29,18 @@ a {
     margin-left: -37.5%;
 }
 .audio {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: .5rem;
+    padding-bottom: 12rem;
 }
 
 .slash {
     padding-bottom: 6rem;
-    padding-top: 1rem;
+    padding-top: .5rem;
 }
 
 .video {
     padding-bottom: 26rem;
-    padding-top: 2rem;
+    padding-top: .5rem;
 }
 
 .one {
