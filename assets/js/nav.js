@@ -1,5 +1,5 @@
 ! function(e) {
-    e.fn.menumaker = function(n) {
+    e.fn.menu = function(n) {
         var s = e(this),
             t = e.extend({
                 title: "Menu",

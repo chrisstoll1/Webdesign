@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+body {
+    font-family: Montserrat, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+.main {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+h3 {
+    padding-top: 50px;
+    font-size: 1500%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.menu {
+    position: fixed;
+    width: 75%;
+    position: fixed;
+    left: 50%;
+    margin-left: -37.5%;
+}
+.audio {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.slash {
+    padding-bottom: 6rem;
+    padding-top: 1rem;
+}
+
+.video {
+    padding-bottom: 26rem;
+    padding-top: 2rem;
+}
+
+.one {
+    color: #262626;
+}
+.one:hover {
+    color: #7f981f;
+}
+.two {
+    color: #262626;
+}
+.two:hover {
+    color: #de242a;
+}
+.three {
+    color: #262626;
+}
+.three:hover {
+    color: #f8bd14;
+}

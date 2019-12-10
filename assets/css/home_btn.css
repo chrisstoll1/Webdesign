@@ -1,0 +1,19 @@
+.home_btn {
+    position: fixed;
+    height: 45px;
+    width: 50px;
+    float: left;
+    background-image: url('../../assets/images/home-solid.svg');
+    background-size: contain;
+}
+
+.home_btn:hover {
+    background-image: url('../../assets/images/home-solid-blue.svg');
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .home_btn {
+        visibility: hidden;
+    }
+}

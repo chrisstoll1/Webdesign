@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="../../assets/css/home_btn.css">
+
+    </head>
+    <body>
+            <a href="../../index.html"><div class="home_btn"></div></a>
+
+
+        <div class="main">
+            <h1>Tables</h1>
+
+            <button onclick="anotherOne()">Another One</button>
+            
+            <table id="thetable">
+                <tr>
+                  <th colspan="3">This Is A Table</th>
+                </tr>
+                <tr>
+                  <td>ey</td>
+                  <td>this</td>
+                  <td>is</td>
+                </tr>
+                <tr>
+                  <td>a</td>
+                  <td>table</td>
+                  <td>!</td>
+                </tr>
+              </table> 
+
+        </div>
+        <script>
+            var cycles = 0;
+            function anotherOne() {
+                var table = document.getElementById("thetable");
+                var row = table.insertRow(3 + cycles);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                cycles += 1;
+                if (cycles == 1) {
+                    cell1.innerHTML =  "Another";
+                    cell2.innerHTML = "Row";
+                    cell3.innerHTML = "!";
+                }else if (cycles == 2) {
+                    cell1.innerHTML =  "If";
+                    cell2.innerHTML = "You";
+                    cell3.innerHTML = "Like";
+                }else if (cycles == 3) {
+                    cell1.innerHTML =  "I";
+                    cell2.innerHTML = "Will";
+                    cell3.innerHTML = "Always";
+                }else if (cycles == 4) {
+                    cell1.innerHTML =  "Create";
+                    cell2.innerHTML = "More";
+                    cell3.innerHTML = "Rows";
+                }else if (cycles == 5) {
+                    cell1.innerHTML =  "No";
+                    cell2.innerHTML = "Matter";
+                    cell3.innerHTML = "What!";
+                }else if (cycles == 6) {
+                    cell1.innerHTML =  "You";
+                    cell2.innerHTML = "Cannot";
+                    cell3.innerHTML = "Stop";
+                }else if (cycles == 7) {
+                    cell1.innerHTML =  "Me";
+                    cell2.innerHTML = "From";
+                    cell3.innerHTML = "Creating";
+                }else if (cycles == 8) {
+                    cell1.innerHTML =  "Infinite";
+                    cell2.innerHTML = "Rows";
+                    cell3.innerHTML = "!!!";
+                }else {
+                    cell1.innerHTML =  "Another";
+                    cell2.innerHTML = "One";
+                    cell3.innerHTML = "<audio controls><source src='anotherone.mp3' type='audio/mpeg'>Your browser does not support the audio element.</audio>";
+                }
+
+            }
+
+        </script>
+    </body>
+</html>

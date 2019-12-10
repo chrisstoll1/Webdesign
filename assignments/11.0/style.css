@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+.parent {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-width: 850px;
+    height: 850px;
+}
+    
+
+    .div1 { grid-area: 1 / 1 / 2 / 6; background-color: turquoise;}
+    .div2 { grid-area: 2 / 2 / 5 / 5; background-color: tomato;}
+    .div3 { grid-area: 2 / 1 / 5 / 2; background-color: violet;}
+    .div4 { grid-area: 2 / 5 / 5 / 6; background-color: yellow;}
+    .div5 { grid-area: 5 / 1 / 6 / 6; background-color: beige;} 
+
+
+
+    @media (max-width: 768px) {
+        .div1 { grid-area: 1 / 1 / 2 / 6; background-color: turquoise;}
+        .div2 { grid-area: 2 / 2 / 4 / 6; background-color: tomato;}
+        .div3 { grid-area: 2 / 1 / 5 / 2; background-color: violet;}
+        .div4 { grid-area: 4 / 2 / 5 / 6; background-color: yellow;}
+        .div5 { grid-area: 5 / 1 / 6 / 6; background-color: beige;} 
+    } 
+
+    @media (max-width: 500px) {
+        .div1 { grid-area: 1 / 1 / 2 / 6; background-color: turquoise;}
+        .div2 { grid-area: 3 / 1 / 4 / 6; background-color: tomato;}
+        .div3 { grid-area: 2 / 1 / 3 / 6; background-color: violet;}
+        .div4 { grid-area: 4 / 1 / 5 / 6; background-color: yellow;}
+        .div5 { grid-area: 5 / 1 / 6 / 6; background-color: beige;} 
+    }

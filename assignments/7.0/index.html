@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="../../assets/css/home_btn.css">
+
+    </head>
+    <body>
+            <a href="../../index.html"><div class="home_btn"></div></a>
+
+            <h1 style="text-align: center;">Calendar</h1>
+
+        <div class="main">
+
+            <div class="formwrapper">
+                <form id="eventform">
+                    Title<br>
+                    <input type="text" name="title" maxlength="13">
+                    <br>Start Time<br>
+                    <input type="datetime-local" name="starttime">
+                    <br>End Time<br>
+                    <input type="datetime-local" name="endtime">
+                    <br>Description<br>
+                    <textarea rows="5" cols="16" name="description"></textarea>
+                    <br><br>
+                </form>
+                <button onclick="submit()">Submit</button> 
+            </div>
+
+            <div class="events" id="events">
+
+
+
+            </div>
+
+            
+        </div>
+
+
+
+        <script src="events.js"></script>
+    </body>
+</html>
